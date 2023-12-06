@@ -1,0 +1,47 @@
+Question 1:
+What is Pandas, and why is it commonly used in data cleaning tasks?
+Pandas is a Python library for data manipulation and analysisIt is commonly used in data cleaning tasks due to its powerful tools for handling missing values, transforming data, and performing efficient operations on large datasets.
+
+Question 2:
+Given a DataFrame with missing values, how would you check for missing values in each column and count the total number of missing values?
+To check for missing values in a DataFrame, you can use the isnull() method, which returns a DataFrame of the same shape with True for missing values and False for non-missing values. The sum() function then counts the True values, providing the count of missing values for each column. The total number of missing values is obtained by summing these counts.
+
+Question 3:
+How can you remove duplicates from a DataFrame while retaining the first occurrence of each unique row?
+The drop_duplicates() method in Pandas is used to remove duplicate rows from a DataFrame. By default, it keeps the first occurrence of each unique row and removes subsequent duplicates.
+
+Question 4:
+If you have a DataFrame with a column containing string values, how can you convert all the values in that column to lowercase?
+To convert all values in a column to lowercase, you can use the str.lower() method, which is applied to the entire column. This ensures uniformity in the case of the string values.
+
+
+
+
+
+
+
+
+Question 5:
+How do you replace missing values in a DataFrame with a specific value, like 0, for a particular column?
+
+The fillna() method in Pandas is used to replace missing values. By specifying the value you want to use (e.g., 0) and setting the inplace parameter to True, you can replace missing values in a specific column.
+
+Question 6:
+If you have a DataFrame with a datetime column, how can you extract the year, month, and day into separate columns?
+Pandas provides the dt accessor for datetime columns. You can use this accessor along with the year, month, and day attributes to extract the corresponding components into separate columns.
+
+Question 7:
+How can you filter rows in a DataFrame where a specific column's values meet a certain condition (e.g., all rows where 'age' is greater than 30)?
+Boolean indexing is used for filtering rows based on a condition in Pandas. By specifying the condition inside square brackets, you obtain a DataFrame containing only the rows that satisfy the given condition.
+
+Question 8:
+What is the purpose of the .apply() function in Pandas, and how would you use it to create a new column based on values from existing columns?
+The .apply() function in Pandas is used to apply a function along the axis of a DataFrame. It can be used to create a new column by applying a function to each row or column of the DataFrame. This is particularly useful when you need to perform custom operations that cannot be easily expressed using built-in functions.
+
+Question 9:
+Suppose you want to merge two DataFrames, 'df1' and 'df2,' on a common column 'key.' How would you perform this merge operation in Pandas?
+The pd.merge() function is used for merging two DataFrames based on a common column ('key' in this case). This function aligns the DataFrames based on the specified column and combines them into a new DataFrame.
+
+Question 10:
+You have a DataFrame with a column containing messy text data. How can you clean and standardize the text data (e.g., remove punctuation and convert to lowercase) in that column?
+For cleaning text data in a DataFrame column, you can use the str.replace() method along with str.lower(). The former is used to replace specific patterns (e.g., punctuation) with another value (e.g., an empty string), and the latter is used to convert all text to lowercase for standardization.
